@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>{{ subject }}</title>
+</head>
+<body>
+    <h1>{{ subject }}</h1>
+    <p>Dear {{ employee.name }},</p>
+    <p>Congratulations on your special day!</p>
+    <!-- Customize the message based on whether it's a birthday or work anniversary -->
+    {% if subject == 'Happy Birthday!' %}
+        <p>We hope you have a fantastic birthday celebration.</p>
+    {% else %}
+        <p>Thank you for your dedication and hard work.</p>
+    {% endif %}
+    <p>Best regards,</p>
+    <p>Your Company Team</p>
+</body>
+</html>
